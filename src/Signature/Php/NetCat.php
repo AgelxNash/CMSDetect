@@ -11,7 +11,7 @@ class NetCat  implements SignatureInterface
 {
     public function detect(Site $site): float
     {
-        $i = 3;
+        $i = 0;
         foreach ($site->headers as $header) {
             if ($header->name === 'x-netcat-version') {
                 $i++;

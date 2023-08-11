@@ -11,7 +11,7 @@ class Grav  implements SignatureInterface
 {
     public function detect(Site $site): float
     {
-        $i = 1;
+        $i = 0;
 
         foreach ($site->cookies as $cookie) {
             if (\mb_strlen($cookie->name) === 17 && 0 === \mb_strpos($cookie->name, 'grav-site-')) {
