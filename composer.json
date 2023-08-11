@@ -2,6 +2,7 @@
     "name": "agelxnash/cmsdetect",
     "require": {
         "php": "^8.0",
+        "ext-dom": "*",
         "symfony/dom-crawler": "^6.0"
     },
     "autoload": {
